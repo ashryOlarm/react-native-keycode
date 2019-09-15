@@ -103,7 +103,7 @@ export class KeycodeInput extends Component {
 
       elements.push(
         <View style={styles.box} key={i}>
-          <Text style={[styles.text, { color: this.props.textColor }]}>{vals[i] || ''}</Text>
+          <Text style={[styles.text, { color: this.props.textColor }]} onPress={()=>this.input.focus()>{vals[i] || ''}</Text>
           <View style={barStyles}/>
         </View>
       )
